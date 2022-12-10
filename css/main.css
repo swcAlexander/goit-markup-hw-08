@@ -142,7 +142,6 @@ body {
 
 .contacts {
   margin-left: auto;
-  gap: 50px;
 }
 
 .contacts__link {
@@ -203,7 +202,7 @@ body {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
@@ -441,6 +440,7 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .hiro-section__button {
@@ -618,7 +618,7 @@ body {
     max-width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team-section__item {
     max-width: calc((100% - 90px) / 4);
   }
@@ -843,6 +843,17 @@ body {
   flex-wrap: wrap;
   gap: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer .container {
+    gap: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    min-width: 1200px;
+    justify-content: start;
+  }
+}
 
 .footer__logo {
   display: inline-block;
@@ -896,6 +907,17 @@ body {
   align-items: center;
   color: var(--primary-white-color);
 }
+@media screen and (min-width: 768px) {
+  .social-container {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-container {
+    align-items: unset;
+    margin-left: 70px;
+  }
+}
 
 .social-container__title {
   margin-bottom: 20px;
@@ -922,6 +944,18 @@ body {
   align-items: center;
   width: 570px;
 }
+@media screen and (min-width: 768px) {
+  .mailing-container {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing-container {
+    align-items: flex-start;
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
 
 .mailing-container__text {
   display: block;
@@ -941,6 +975,11 @@ body {
   align-items: center;
   gap: 12px;
 }
+@media screen and (min-width: 1200px) {
+  .mailing-container__form {
+    flex-direction: row;
+  }
+}
 
 .mailing-container__input {
   width: 358px;
@@ -958,4 +997,9 @@ body {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 400px) {
+  .mailing-container__input {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
