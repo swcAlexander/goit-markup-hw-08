@@ -76,12 +76,6 @@
               clip-rule="evenodd"></path>
           </svg>
         </button>
-
-        <ul class="menu">
-          <li><a href="" class="link">Студія</a></li>
-          <li><a href="" class="link">Портфоліо</a></li>
-          <li><a href="" class="link">Контакти</a></li>
-        </ul>
       </div>
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
@@ -99,27 +93,27 @@
         </button>
 
         <ul class="mobile-menu">
-          <li><a href="" class="link">Студія</a></li>
-          <li><a href="" class="link">Портфоліо</a></li>
+          <li><a href="./index.html" class="link">Студія</a></li>
+          <li><a href="./pages/portfolio.html" class="link">Портфоліо</a></li>
           <li><a href="" class="link">Контакти</a></li>
         </ul>
-        <ul class="mobile-menu list">
-          <li class="mobile-menu__item">
-            <a href="mailto:info@devstudio.com" class="mobile-menu__link list">
-              <span>info@devstudio.com</span>
-            </a>
-          </li>
+        <ul class="mobile-menu down list">
           <li class="mobile-menu__item">
             <a href="tel:+380961111111" class="mobile-menu__link list">
               <span>+38 096 111 11 11</span>
             </a>
           </li>
+          <li class="mobile-menu__item">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__link list">
+              <span>info@devstudio.com</span>
+            </a>
+          </li>
         </ul>
         <ul class="mobile-social">
-          <li>Instagram</li>
-          <li>Twitter</li>
-          <li>Facebook</li>
-          <li>LinkedIn</li>
+          <li class="mobile-social__link">Instagram</li>
+          <li class="mobile-social__link">Twitter</li>
+          <li class="mobile-social__link">Facebook</li>
+          <li class="mobile-social__link">LinkedIn</li>
         </ul>
       </div>
     </header>
@@ -252,19 +246,34 @@
           <ul class="work-section__list list">
             <li class="work-section__item">
               <a href="" class="list">
-                <img src="./images/img1.jpg" alt="" width="370" height="294" />
+                <img
+                  srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
+                  src="./images/img1.jpg"
+                  alt=""
+                  width="370"
+                  height="294" />
                 <p class="work-section__text">Декстопні додатки</p>
               </a>
             </li>
             <li class="work-section__item">
               <a href="" class="list">
-                <img src="./images/img2.jpg" alt="" width="370" height="294" />
+                <img
+                  srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                  src="./images/img2.jpg"
+                  alt=""
+                  width="370"
+                  height="294" />
                 <p class="work-section__text">Мобільні додатки</p>
               </a>
             </li>
             <li class="work-section__item">
               <a href="" class="list">
-                <img src="./images/img3.jpg" alt="" width="370" height="294" />
+                <img
+                  srcset="./images/img1.jpg 1x, ./images/img3@2x.jpg 2x"
+                  src="./images/img3.jpg"
+                  alt=""
+                  width="370"
+                  height="294" />
                 <p class="work-section__text">Дизайнерські рішення</p>
               </a>
             </li>
@@ -278,6 +287,7 @@
             <li class="team-section__item">
               <img
                 class="team-section__image"
+                srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg. 2x"
                 src="./images/igor.jpg"
                 alt="фото Ігоря Дем'яненка"
                 width="270"
@@ -333,6 +343,7 @@
             <li class="team-section__item">
               <img
                 class="team-section__image"
+                srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg. 2x"
                 src="./images/olga.jpg"
                 alt="фото Ольги Рєпіної"
                 width="270"
@@ -388,6 +399,7 @@
             <li class="team-section__item">
               <img
                 class="team-section__image"
+                srcset="./images/nicolay.jpg 1x, ./images/nicolay@2x.jpg. 2x"
                 src="./images/nicolay.jpg"
                 alt="фото Миколи Тарасова"
                 width="270"
@@ -443,6 +455,7 @@
             <li class="team-section__item">
               <img
                 class="team-section__image"
+                srcset="./images/myhail.jpg 1x, ./images/myhail@2x.jpg. 2x"
                 src="./images/myhail.jpg"
                 alt="фото Михайла Єрмакова"
                 width="270"
@@ -645,5 +658,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

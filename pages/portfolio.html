@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/main.min.css" />
   </head>
   <body>
-    <header class="site-header--border">
+    <header class="site-header">
       <div class="container flex">
         <nav class="nav flex">
           <a href="../index.html" class="logo centred flex"
@@ -26,7 +26,7 @@
               <a href="../index.html" class="nav__link list">Студія</a>
             </li>
             <li class="nav__item">
-              <a href="./pages/portfolio.html" class="nav__link current list"
+              <a href="./pages/portfolio.html" class="nav__link list current"
                 >Портфоліо</a
               >
             </li>
@@ -35,7 +35,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts list flex">
+        <ul class="contacts list">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link list">
               <svg class="contacts__mail">
@@ -58,6 +58,61 @@
               <span>+38 096 111 11 11</span>
             </a>
           </li>
+        </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24">
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu">
+          <li><a href="./index.html" class="link">Студія</a></li>
+          <li><a href="./pages/portfolio.html" class="link">Портфоліо</a></li>
+          <li><a href="" class="link">Контакти</a></li>
+        </ul>
+        <ul class="mobile-menu down list">
+          <li class="mobile-menu__item">
+            <a href="tel:+380961111111" class="mobile-menu__link list">
+              <span>+38 096 111 11 11</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__link list">
+              <span>info@devstudio.com</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-social">
+          <li class="mobile-social__link">Instagram</li>
+          <li class="mobile-social__link">Twitter</li>
+          <li class="mobile-social__link">Facebook</li>
+          <li class="mobile-social__link">LinkedIn</li>
         </ul>
       </div>
     </header>
@@ -388,5 +443,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/mobile-menu.js"></script>
   </body>
 </html>
