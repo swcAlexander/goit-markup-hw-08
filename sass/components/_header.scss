@@ -1,7 +1,11 @@
 .site-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: var(--primary-white-color);
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .site-header--border {
@@ -81,6 +85,7 @@
 .contacts__link {
   display: flex;
   align-items: center;
+  gap: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
