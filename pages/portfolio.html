@@ -121,21 +121,21 @@
         <div class="container">
           <h1 class="hidden">Портфоліо</h1>
           <ul class="button-list list">
-            <li>
+            <li class="button-list__item">
               <button type="button" class="button-list__button">Усі</button>
             </li>
-            <li>
+            <li class="button-list__item">
               <button type="button" class="button-list__button">
                 Веб-сайти
               </button>
             </li>
-            <li>
+            <li class="button-list__item">
               <button type="button" class="button-list__button">Додатки</button>
             </li>
-            <li>
+            <li class="button-list__item">
               <button type="button" class="button-list__button">Дизайн</button>
             </li>
-            <li>
+            <li class="button-list__item">
               <button type="button" class="button-list__button">
                 Маркетинг
               </button>
@@ -145,12 +145,28 @@
             <li class="portfolio__item">
               <a href="/" class="portfolio__link list">
                 <div class="container-images">
-                  <img
-                    src="../images/tehnocrjack.jpg"
-                    alt="Перша сторінка сайту Технокряк"
-                    width="370"
-                    height="294"
-                    class="container-images__image" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../images/tehnocrjack.webp    1x,
+                        ../images/tehnocrjack@2x.webp 2x
+                      "
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ../images/tehnocrjack.jpg    1x,
+                        ../images/tehnocrjack@2x.jpg 2x
+                      "
+                      type="image/jpeg" />
+                    <img
+                      src="../images/tehnocrjack.jpg"
+                      alt="Перша сторінка сайту Технокряк"
+                      width="370"
+                      height="294"
+                      class="container-images__image"
+                      sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -170,12 +186,27 @@
             <li class="portfolio__item">
               <a href="/" class="portfolio__link list">
                 <div class="container-images">
-                  <img
-                    src="../images/poster.jpg"
-                    alt="Баскетбол"
-                    width="370"
-                    height="294"
-                    class="container-images__image" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../images/poster.webp    1x,
+                        ../images/poster@2x.webp 2x
+                      "
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ../images/poster.jpg    1x,
+                        ../images/poster@2x.jpg 2x
+                      "
+                      type="image/jpeg" />
+                    <img
+                      src="../images/poster.jpg"
+                      alt="Баскетбол"
+                      width="370"
+                      height="294"
+                      class="container-images__image"
+                      sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -196,12 +227,28 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link list">
                 <div class="container-images">
-                  <img
-                    src="../images/seafood.jpg"
-                    alt="Логотип ресторану Seafood"
-                    width="370"
-                    height="294"
-                    class="container-images__image" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../images/seafood.webp    1x,
+                        ../images/seafood@2x.webp 2x
+                      "
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ../images/seafood.jpg    1x,
+                        ../images/seafood@2x.jpg 2x
+                      "
+                      type="image/jpeg" />
+                    <img
+                      src="../images/seafood.jpg"
+                      alt="Логотип ресторану Seafood"
+                      width="370"
+                      height="294"
+                      class="container-images__image"
+                      sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -220,12 +267,24 @@
             <li class="portfolio__item">
               <a href="/" class="portfolio__link list">
                 <div class="container-images">
-                  <img
-                    src="../images/prime.jpg"
-                    alt="Навушники"
-                    width="370"
-                    height="294"
-                    class="container-images__image" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../images/prime.webp    1x,
+                        ../images/prime@2x.webp 2x
+                      "
+                      type="image/webp" />
+                    <source
+                      srcset="../images/prime.jpg 1x, ../images/prime@2x.jpg 2x"
+                      type="image/jpeg" />
+                    <img
+                      src="../images/prime.jpg"
+                      alt="Навушники"
+                      width="370"
+                      height="294"
+                      class="container-images__image"
+                      sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -244,12 +303,24 @@
             <li class="portfolio__item">
               <a href="/" class="portfolio__link list">
                 <div class="container-images">
-                  <img
-                    src="../images/boxes.jpg"
-                    alt="Подарункові коробки"
-                    width="370"
-                    height="294"
-                    class="container-images__image" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../images/boxes.webp    1x,
+                        ../images/boxes@2x.webp 2x
+                      "
+                      type="image/webp" />
+                    <source
+                      srcset="../images/boxes.jpg 1x, ../images/boxes@2x.jpg 2x"
+                      type="image/jpeg" />
+                    <img
+                      src="../images/boxes.jpg"
+                      alt="Подарункові коробки"
+                      width="370"
+                      height="294"
+                      class="container-images__image"
+                      sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -268,12 +339,27 @@
             <li class="portfolio__item">
               <a href="/" class="portfolio__link list">
                 <div class="container-images">
-                  <img
-                    src="../images/inspiration.jpg"
-                    alt="Монітор з зображенням"
-                    width="370"
-                    height="294"
-                    class="container-images__image" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../images/inspiration.webp    1x,
+                        ../images/inspiration@2x.webp 2x
+                      "
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ../images/inspiration.jpg    1x,
+                        ../images/inspiration@2x.jpg 2x
+                      "
+                      type="image/jpeg" />
+                    <img
+                      src="../images/inspiration.jpg"
+                      alt="Монітор з зображенням"
+                      width="370"
+                      height="294"
+                      class="container-images__image"
+                      sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -292,12 +378,28 @@
             <li class="portfolio__item">
               <a href="/" class="portfolio__link list">
                 <div class="container-images">
-                  <img
-                    src="../images/limited-edition.jpg"
-                    alt="Журнал Limited Edition"
-                    width="370"
-                    height="294"
-                    class="container-images__image" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../images/limited-edition.webp    1x,
+                        ../images/limited-edition@2x.webp 2x
+                      "
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ../images/limited-edition.jpg    1x,
+                        ../images/limited-edition@2x.jpg 2x
+                      "
+                      type="image/jpeg" />
+                    <img
+                      src="../images/limited-edition.jpg"
+                      alt="Журнал Limited Edition"
+                      width="370"
+                      height="294"
+                      class="container-images__image"
+                      sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -316,12 +418,22 @@
             <li class="portfolio__item">
               <a href="/" class="portfolio__link list">
                 <div class="container-images">
-                  <img
-                    src="../images/lab.jpg"
-                    alt="Реклама проєкту LAB"
-                    width="370"
-                    height="294"
-                    class="container-images__image" />
+                  <picture>
+                    <source
+                      srcset="../images/lab.webp 1x, ../images/lab@2x.webp 2x"
+                      type="image/webp" />
+                    <source
+                      srcset="../images/lab.jpg 1x, ../images/lab@2x.jpg 2x"
+                      type="image/jpeg" />
+                    <img
+                      src="../images/lab.jpg"
+                      alt="Реклама проєкту LAB"
+                      width="370"
+                      height="294"
+                      class="container-images__image"
+                      sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -340,12 +452,28 @@
             <li class="portfolio__item">
               <a href="/" class="portfolio__link list">
                 <div class="container-images">
-                  <img
-                    src="../images/growing-business.jpg"
-                    alt="Запуск додатку на ноутбуці"
-                    width="370"
-                    height="294"
-                    class="container-images__image" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../images/growing-business.webp    1x,
+                        ../images/growing-business@2x.webp 2x
+                      "
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ../images/growing-business.jpg    1x,
+                        ../images/growing-business@2x.jpg 2x
+                      "
+                      type="image/jpeg" />
+                    <img
+                      src="../images/growing-business.jpg"
+                      alt="Запуск додатку на ноутбуці"
+                      width="370"
+                      height="294"
+                      class="container-images__image"
+                      sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
