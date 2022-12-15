@@ -257,7 +257,6 @@
                     src="./images/img1.jpg"
                     alt=""
                     width="370"
-                    height="294"
                     sizes="(min-width: 1200px) 33vw" />
                 </picture>
                 <p class="work-section__text">Декстопні додатки</p>
@@ -276,7 +275,6 @@
                     src="./images/img2.jpg"
                     alt=""
                     width="370"
-                    height="294"
                     sizes="(min-width: 1200px) 33vw" />
                 </picture>
                 <p class="work-section__text">Мобільні додатки</p>
@@ -295,7 +293,6 @@
                     src="./images/img3.jpg"
                     alt=""
                     width="370"
-                    height="294"
                     sizes="(min-width: 1200px) 33vw" />
                 </picture>
                 <p class="work-section__text">Дизайнерські рішення</p>
@@ -311,17 +308,47 @@
             <li class="team-section__item">
               <picture>
                 <source
-                  srcset="./images/igor.webp 1x, ./images/igor@2x.webp 2x"
-                  type="image/webp" />
+                  srcset="
+                    ./images/igor-desktop.webp    1x,
+                    ./images/igor-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)" />
                 <source
-                  srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
-                  type="image/jpeg" />
+                  srcset="
+                    ./images/igor-desktop.jpg    1x,
+                    ./images/igor-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/igor-tab.webp    1x,
+                    ./images/igor-tab@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/igor-tab.jpg 1x, ./images/igor-tab@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/igor-mob.webp    1x,
+                    ./images/igor-mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="./images/igor-mob.jpg 1x, ./images/igor-mob@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)" />
+
                 <img
                   class="team-section__image"
-                  src="./images/igor.jpg"
+                  src="./images/igor-mob.jpg"
                   alt="фото Ігоря Дем'яненко"
-                  width="270"
-                  height="260"
+                  width="450"
                   sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
               </picture>
               <div class="team-section__box">
@@ -375,17 +402,47 @@
             <li class="team-section__item">
               <picture>
                 <source
-                  srcset="./images/olga.webp 1x, ./images/olga@2x.webp 2x"
-                  type="image/webp" />
+                  srcset="
+                    ./images/olga-desktop.webp    1x,
+                    ./images/olga-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)" />
                 <source
-                  srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x"
-                  type="image/jpeg" />
+                  srcset="
+                    ./images/olga-desktop.jpg    1x,
+                    ./images/olga-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/olga-tab.webp    1x,
+                    ./images/olga-tab@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/olga-tab.jpg 1x, ./images/olga-tab@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/olga-mob.webp    1x,
+                    ./images/olga-mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="./images/olga-mob.jpg 1x, ./images/olga-mob@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)" />
+
                 <img
                   class="team-section__image"
-                  src="./images/olga.jpg"
+                  src="./images/olga-mob.jpg"
                   alt="фото Ольги Рєпіної"
-                  width="270"
-                  height="260"
+                  width="450"
                   sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
               </picture>
               <div class="team-section__box">
@@ -439,17 +496,52 @@
             <li class="team-section__item">
               <picture>
                 <source
-                  srcset="./images/nicolay.webp 1x, ./images/nicolay@2x.webp 2x"
-                  type="image/webp" />
+                  srcset="
+                    ./images/mykola-desktop.webp    1x,
+                    ./images/mykola-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)" />
                 <source
-                  srcset="./images/nicolay.jpg 1x, ./images/nicolay@2x.jpg 2x"
-                  type="image/jpeg" />
+                  srcset="
+                    ./images/mykola-desktop.jpg    1x,
+                    ./images/mykola-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/mykola-tab.webp    1x,
+                    ./images/mykola-tab@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/mykola-tab.jpg    1x,
+                    ./images/mykola-tab@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/mykola-mob.webp    1x,
+                    ./images/mykola-mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/mykola-mob.jpg    1x,
+                    ./images/mykola-mob@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 767px)" />
                 <img
                   class="team-section__image"
-                  src="./images/nicolay.jpg"
+                  src="./images/mykola-mob.jpg"
                   alt="фото Миколи Тарасова"
-                  width="270"
-                  height="260"
+                  width="450"
                   sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
               </picture>
               <div class="team-section__box">
@@ -503,17 +595,52 @@
             <li class="team-section__item">
               <picture>
                 <source
-                  srcset="./images/myhail.webp 1x, ./images/myhail@2x.webp 2x"
-                  type="image/webp" />
+                  srcset="
+                    ./images/myhail-desktop.webp    1x,
+                    ./images/myhail-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)" />
                 <source
-                  srcset="./images/myhail.jpg 1x, ./images/myhail@2x.jpg 2x"
-                  type="image/jpeg" />
+                  srcset="
+                    ./images/myhail-desktop.jpg    1x,
+                    ./images/myhail-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/myhail-tab.webp    1x,
+                    ./images/myhail-tab@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/myhail-tab.jpg    1x,
+                    ./images/myhail-tab@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/myhail-mob.webp    1x,
+                    ./images/myhail-mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/myhail-mob.jpg    1x,
+                    ./images/myhail-mob@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 767px)" />
                 <img
                   class="team-section__image"
-                  src="./images/myhail.jpg"
+                  src="./images/myhail-mob.jpg"
                   alt="фото Михайа Єрмакова"
-                  width="270"
-                  height="260"
+                  width="450"
                   sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
               </picture>
               <div class="team-section__box">

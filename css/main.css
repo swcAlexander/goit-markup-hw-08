@@ -186,13 +186,19 @@ body {
   align-items: center;
   gap: 10px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.1666;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.1428;
+  }
 }
 
 .contacts__mail {
@@ -617,8 +623,8 @@ body {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image480.jpg);
   background-repeat: no-repeat;
@@ -642,6 +648,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hiro-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image1600.jpg);
   }
 }
@@ -974,21 +982,34 @@ body {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   border-top: 1px solid var(--secondery-border-color);
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .button-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   gap: 8px;
   background-color: var(--primary-white-color);
 }
 @media screen and (min-width: 768px) {
   .button-list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-list {
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 450px) {
@@ -1171,6 +1192,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 8px;
 }
 @media screen and (min-width: 1200px) {
   .footer__list {
